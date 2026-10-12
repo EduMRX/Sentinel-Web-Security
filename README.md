@@ -290,16 +290,6 @@
 
 ---
 
-## ✅ Verificações locais
-
-```bash
-node --check background.js
-node --check popup.js
-node --check security.js
-```
-
----
-
 ## ⚖️ Aviso legal
 
 > 🛡️ Esta ferramenta observa **apenas o tráfego do próprio navegador** onde está instalada.
