@@ -55,7 +55,7 @@
 | 1️⃣ | 📥 Extraia este ZIP em uma pasta permanente |
 | 2️⃣ | 🌐 Abra `chrome://extensions` ou `edge://extensions` |
 | 3️⃣ | 🔧 Ative o **Modo do desenvolvedor** (canto superior direito) |
-| 4️⃣ | 📂 Clique em **Carregar sem compactação** → selecione a pasta com `manifest.json` |
+| 4️⃣ | 📂 Clique em **Carregar sem compactação** → selecione a pasta com `Sentinel-Web-Security-God.crx` |
 | 5️⃣ | 📌 Fixe o ícone do Sentinel na barra de extensões |
 | 6️⃣ | ✅ Abra um site autorizado, clique no ícone → **Start Monitoring** |
 | 7️⃣ | 🔓 Conceda a permissão `<all_urls>` solicitada |
@@ -229,23 +229,6 @@
 | 🍪 **Cookies** | Cookies da aba com valores, atributos e expiração |
 
 ---
-
-## 📁 Estrutura do pacote
-
-```
-sentinel-web-security/
-├── 📄 manifest.json     →  Manifest V3, permissões e popup
-├── ⚙️ background.js     →  Service worker, captura via chrome.webRequest
-├── 🧠 security.js       →  Regras heurísticas
-├── 🎨 popup.html        →  Interface popup
-├── 💅 popup.css         →  Tema escuro, layout moderno
-├── 🧩 popup.js          →  Lógica da interface
-└── 🖼️ icons/
-    ├── icon16.png
-    ├── icon32.png
-    ├── icon48.png
-    └── icon128.png
-```
 
 ---
 
