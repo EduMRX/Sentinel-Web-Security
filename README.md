@@ -229,6 +229,13 @@
 | 🍪 **Cookies** | Cookies da aba com valores, atributos e expiração |
 
 ---
+**PRINTS COM DADOS DE EXEMPLO**
+
+<img width="412" height="616" alt="image" src="https://github.com/user-attachments/assets/e99e494f-cec4-4ab3-bc48-2e84a3439689" />
+<img width="450" height="602" alt="image" src="https://github.com/user-attachments/assets/3f475244-c08d-421c-9e0c-907942fba7bf" />
+<img width="417" height="627" alt="image" src="https://github.com/user-attachments/assets/0637448c-068a-4428-b99b-684e705454c1" />
+<img width="412" height="630" alt="image" src="https://github.com/user-attachments/assets/b579b5b9-0736-4675-813f-dcc57c0df829" />
+
 
 ---
 
