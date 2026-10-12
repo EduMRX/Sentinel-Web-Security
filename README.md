@@ -62,35 +62,163 @@
 | 8️⃣ | 🔄 Recarregue a aba (`Ctrl+R`) para capturar os headers do documento |
 
 ---
+<!-- ██ TABELA 1 — Cabeçalho VERMELHO ██ -->
+<table style="border-collapse:collapse;width:100%;font-family:-apple-system,Segoe UI,sans-serif;font-size:14px;margin:20px 0">
+  <thead>
+    <tr style="background:#d94a3d;color:#fff;text-align:left">
+      <th style="padding:12px 16px;font-weight:700">Aba</th>
+      <th style="padding:12px 16px;font-weight:700">Função</th>
+      <th style="padding:12px 16px;font-weight:700">Destaque</th>
+      <th style="padding:12px 16px;font-weight:700">Atalho</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr style="background:#f7f7f7">
+      <td style="padding:11px 16px">🏠 Overview</td>
+      <td style="padding:11px 16px">Status + métricas</td>
+      <td style="padding:11px 16px">HTTPS, reqs, latência, alertas</td>
+      <td style="padding:11px 16px">—</td>
+    </tr>
+    <tr style="background:#ececec">
+      <td style="padding:11px 16px">📡 Network</td>
+      <td style="padding:11px 16px">Tráfego HTTP(S)</td>
+      <td style="padding:11px 16px">Busca + filtro + expansão</td>
+      <td style="padding:11px 16px">—</td>
+    </tr>
+    <tr style="background:#f7f7f7">
+      <td style="padding:11px 16px">🛡️ Security</td>
+      <td style="padding:11px 16px">Achados heurísticos</td>
+      <td style="padding:11px 16px">Headers + severidade</td>
+      <td style="padding:11px 16px">—</td>
+    </tr>
+    <tr style="background:#ececec">
+      <td style="padding:11px 16px">🍪 Cookies</td>
+      <td style="padding:11px 16px">Cookies da aba</td>
+      <td style="padding:11px 16px">Nome, valor, atributos</td>
+      <td style="padding:11px 16px">—</td>
+    </tr>
+    <tr style="background:#f7f7f7">
+      <td style="padding:11px 16px">⚙️ Settings</td>
+      <td style="padding:11px 16px">Revogar acesso</td>
+      <td style="padding:11px 16px">Pausa + limpa + remove permissão</td>
+      <td style="padding:11px 16px">topo direito</td>
+    </tr>
+  </tbody>
+</table>
 
-## 🖥️ A interface
 
-```
-┌──────────────────────────────────────────────┐
-│ 🛡️  Sentinel Web Security         v0.1.4  ⚙️ │
-├──────────────────────────────────────────────┤
-│ 🏠 Overview │ 📡 Network │ 🛡️ Security │ 🍪 Cookies │
-├──────────────────────────────────────────────┤
-│  🌍  Current page          Monitor status    │
-│      demo-app.local        🟢 Active         │
-│                                              │
-│  🔒 HTTPS        📄 Requests     ⏱️ Latency   ⚠️ Alerts │
-│  Enabled         128             214 ms        3        │
-│                                              │
-│  ⏱️ Recent Requests                View all →│
-│  GET  /api/login     200   123 ms           │
-│  POST /api/auth      302   241 ms           │
-│  GET  /assets/app.js 200    44 ms           │
-│                                              │
-│  🛡️ Security Findings         View details → │
-│  ❌ Missing CSP                              │
-│  ⚠️ Cookie without SameSite                  │
-│  ⚠️ HSTS not detected                        │
-├──────────────────────────────────────────────┤
-│ ▶️ Start  ⏸️ Pause  🗑️ Clear  📤 Export       │
-└──────────────────────────────────────────────┘
-```
+<!-- ██ TABELA 2 — Cabeçalho PRETO ██ -->
+<table style="border-collapse:collapse;width:100%;font-family:-apple-system,Segoe UI,sans-serif;font-size:14px;margin:20px 0">
+  <thead>
+    <tr style="background:#111;color:#fff;text-align:left">
+      <th style="padding:12px 16px;font-weight:700">Método</th>
+      <th style="padding:12px 16px;font-weight:700">Path</th>
+      <th style="padding:12px 16px;font-weight:700">Status</th>
+      <th style="padding:12px 16px;font-weight:700">Tempo</th>
+      <th style="padding:12px 16px;font-weight:700">Tipo</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr style="background:#f7f7f7">
+      <td style="padding:11px 16px;color:#10b981;font-weight:700">GET</td>
+      <td style="padding:11px 16px;font-family:monospace">/api/login</td>
+      <td style="padding:11px 16px;color:#10b981;font-weight:700">200</td>
+      <td style="padding:11px 16px">123 ms</td>
+      <td style="padding:11px 16px">xhr</td>
+    </tr>
+    <tr style="background:#ececec">
+      <td style="padding:11px 16px;color:#3b82f6;font-weight:700">POST</td>
+      <td style="padding:11px 16px;font-family:monospace">/api/auth</td>
+      <td style="padding:11px 16px;color:#f59e0b;font-weight:700">302</td>
+      <td style="padding:11px 16px">241 ms</td>
+      <td style="padding:11px 16px">xhr</td>
+    </tr>
+    <tr style="background:#f7f7f7">
+      <td style="padding:11px 16px;color:#10b981;font-weight:700">GET</td>
+      <td style="padding:11px 16px;font-family:monospace">/assets/app.js</td>
+      <td style="padding:11px 16px;color:#10b981;font-weight:700">200</td>
+      <td style="padding:11px 16px">44 ms</td>
+      <td style="padding:11px 16px">script</td>
+    </tr>
+    <tr style="background:#ececec">
+      <td style="padding:11px 16px;color:#10b981;font-weight:700">GET</td>
+      <td style="padding:11px 16px;font-family:monospace">/api/profile</td>
+      <td style="padding:11px 16px;color:#ef4444;font-weight:700">401</td>
+      <td style="padding:11px 16px">188 ms</td>
+      <td style="padding:11px 16px">xhr</td>
+    </tr>
+    <tr style="background:#f7f7f7">
+      <td style="padding:11px 16px;color:#f59e0b;font-weight:700">PUT</td>
+      <td style="padding:11px 16px;font-family:monospace">/api/settings</td>
+      <td style="padding:11px 16px;color:#f59e0b;font-weight:700">304</td>
+      <td style="padding:11px 16px">96 ms</td>
+      <td style="padding:11px 16px">xhr</td>
+    </tr>
+    <tr style="background:#ececec">
+      <td style="padding:11px 16px;color:#a855f7;font-weight:700">PATCH</td>
+      <td style="padding:11px 16px;font-family:monospace">/api/user/1</td>
+      <td style="padding:11px 16px;color:#10b981;font-weight:700">204</td>
+      <td style="padding:11px 16px">52 ms</td>
+      <td style="padding:11px 16px">xhr</td>
+    </tr>
+    <tr style="background:#f7f7f7">
+      <td style="padding:11px 16px;color:#ef4444;font-weight:700">DELETE</td>
+      <td style="padding:11px 16px;font-family:monospace">/api/session</td>
+      <td style="padding:11px 16px;color:#ef4444;font-weight:700">500</td>
+      <td style="padding:11px 16px">412 ms</td>
+      <td style="padding:11px 16px">xhr</td>
+    </tr>
+  </tbody>
+</table>
 
+
+<!-- ██ TABELA 3 — Cabeçalho VERDE ██ -->
+<table style="border-collapse:collapse;width:100%;font-family:-apple-system,Segoe UI,sans-serif;font-size:14px;margin:20px 0">
+  <thead>
+    <tr style="background:#2ecc71;color:#fff;text-align:left">
+      <th style="padding:12px 16px;font-weight:700">Severidade</th>
+      <th style="padding:12px 16px;font-weight:700">Achado</th>
+      <th style="padding:12px 16px;font-weight:700">Detalhe</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr style="background:#f7f7f7">
+      <td style="padding:11px 16px;color:#ef4444;font-weight:700">🔴 ALTO</td>
+      <td style="padding:11px 16px">Conexão sem HTTPS</td>
+      <td style="padding:11px 16px">Página carregada por HTTP, sem TLS</td>
+    </tr>
+    <tr style="background:#ececec">
+      <td style="padding:11px 16px;color:#f59e0b;font-weight:700">🟡 MÉDIO</td>
+      <td style="padding:11px 16px">Missing CSP</td>
+      <td style="padding:11px 16px">Nenhum Content-Security-Policy detectado</td>
+    </tr>
+    <tr style="background:#f7f7f7">
+      <td style="padding:11px 16px;color:#f59e0b;font-weight:700">🟡 MÉDIO</td>
+      <td style="padding:11px 16px">HSTS not detected</td>
+      <td style="padding:11px 16px">Strict-Transport-Security ausente</td>
+    </tr>
+    <tr style="background:#ececec">
+      <td style="padding:11px 16px;color:#f59e0b;font-weight:700">🟡 MÉDIO</td>
+      <td style="padding:11px 16px">Cookie sem Secure</td>
+      <td style="padding:11px 16px">Pode trafegar em conexões HTTP</td>
+    </tr>
+    <tr style="background:#f7f7f7">
+      <td style="padding:11px 16px;color:#3b82f6;font-weight:700">🔵 BAIXO</td>
+      <td style="padding:11px 16px">X-Content-Type-Options ausente</td>
+      <td style="padding:11px 16px">Considere adicionar <code>nosniff</code></td>
+    </tr>
+    <tr style="background:#ececec">
+      <td style="padding:11px 16px;color:#3b82f6;font-weight:700">🔵 BAIXO</td>
+      <td style="padding:11px 16px">CSP permite unsafe-inline</td>
+      <td style="padding:11px 16px">Reduz proteção contra XSS</td>
+    </tr>
+    <tr style="background:#f7f7f7">
+      <td style="padding:11px 16px;color:#6b7785;font-weight:700">⚪ INFO</td>
+      <td style="padding:11px 16px">Referrer-Policy não explícita</td>
+      <td style="padding:11px 16px">Navegador usará política padrão</td>
+    </tr>
+  </tbody>
+</table>
 ### 📑 Abas em detalhe
 
 | Aba | Conteúdo |
