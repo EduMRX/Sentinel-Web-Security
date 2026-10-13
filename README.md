@@ -55,7 +55,7 @@
 | 1️⃣ | 📥 Extraia este ZIP em uma pasta permanente |
 | 2️⃣ | 🌐 Abra `chrome://extensions` ou `edge://extensions` |
 | 3️⃣ | 🔧 Ative o **Modo do desenvolvedor** (canto superior direito) |
-| 4️⃣ | 📂 Clique em **Carregar sem compactação** → selecione a pasta com `Sentinel-Web-Security-God.crx` |
+| 4️⃣ | 📂 Clique em **Carregar sem compactação** → selecione a pasta extraída que contém o arquivo `manifest.json` (não selecione um arquivo `.crx`) |
 | 5️⃣ | 📌 Fixe o ícone do Sentinel na barra de extensões |
 | 6️⃣ | ✅ Abra um site autorizado, clique no ícone → **Start Monitoring** |
 | 7️⃣ | 🔓 Conceda a permissão `<all_urls>` solicitada |
@@ -303,3 +303,16 @@
   <sub>💚 Feito para aprendizado e testes autorizados</sub><br>
   <sub>🏠 100% local • 🚫 sem servidor • 🚫 sem telemetria</sub>
 </p>
+
+
+## 📦 Distribuição e instalação — informação importante
+
+Este repositório atualmente contém um arquivo `.crx` e documentação, mas não os arquivos-fonte necessários para **Carregar sem compactação**.
+
+- Para testar a versão descompactada: obtenha o pacote de código-fonte autorizado do projeto, extraia-o, abra `chrome://extensions`, ative o modo desenvolvedor e selecione a **pasta com `manifest.json`**.
+- O arquivo `.crx` não é uma pasta descompactada. Navegadores podem restringir ou impedir instalações diretas de CRX distribuídos fora da loja oficial.
+- Não distribua chaves de assinatura `.pem`, tokens ou credenciais.
+- Evite tornar público um repositório antes de revisar também o **histórico de commits**: remover arquivos do estado atual não remove o histórico.
+- Não apresente a extensão como uma auditoria completa ou garantia de segurança.
+
+> A instalação e o funcionamento devem ser validados localmente antes de qualquer distribuição comercial.
