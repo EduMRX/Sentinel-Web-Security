@@ -1,0 +1,12 @@
+*.pem
+*.key
+*.p12
+*.pfx
+.env
+.env.*
+node_modules/
+.DS_Store
+*.crx
+*.zip
+sentinel-*.json
+sentinel-*.csv

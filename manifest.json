@@ -1,0 +1,35 @@
+{
+  "manifest_version": 3,
+  "name": "Sentinel Web Security — Free",
+  "short_name": "Sentinel Free",
+  "description": "Inspeção HTTP(S), cabeçalhos de segurança e cookies, local e gratuita. Use somente em sites autorizados.",
+  "version": "0.1.5",
+  "minimum_chrome_version": "102",
+  "permissions": [
+    "storage",
+    "tabs",
+    "webRequest",
+    "cookies",
+    "unlimitedStorage"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Sentinel — Web Security",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "host_permissions": [
+    "<all_urls>"
+  ]
+}
